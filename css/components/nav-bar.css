@@ -1,0 +1,42 @@
+.nav {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background-color: #F9F9FA;
+    padding:30px 0;
+    border-top:1px solid rgba(0,0,0,0.2);
+}
+.nav__ul {
+    display:flex;
+    justify-content: space-around;
+}
+.nav__link {
+    position:relative;
+    /* color:#2F363E;------>'styles.css'의 body의 color의 속성값으로 들어가면서 필요없어짐'*/
+}
+.nav__notification {
+    background-color:tomato;
+    /*
+    display:block; ------>필요없어짐.왜냐하면 아래에서 display:flex를 작성했는데 이것은 display:block의 효과도 가지고 있다.
+    */
+    width:30px;
+    height:30px;
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight:600;
+    position:absolute;
+    right:-15px;
+    top:-15px;
+}
+.nav__dot-notification {
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background-color:tomato;
+    position:absolute;
+    right:-10px;
+    top:-10px;
+}

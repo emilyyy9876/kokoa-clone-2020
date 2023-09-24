@@ -1,0 +1,47 @@
+<!--대부분의 web server가 디폴트로 index.html을 찾아보도록 설정되어 있음-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to KaKaoTalk</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="https://kit.fontawesome.com/be354233e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--하나 밖에 없어도 일단 class로 쓰는게 좋다...어떤게 id고 class인지 기억 못하므로 표현:BEM(Block Element Modifier)-->
+    <div class="status-bar">
+        <!--관행...status-bar에 있는 column 표현:BEM(Block Element Modifier)-->
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fa-solid fa-battery-half"></i>
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </div>
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to KaKaoTalk</h1>
+        <p class="welcome-header__text">
+            If you have a KaKao Account, log in with your email or phone number.
+        </p>
+    </header>
+    <!--form tag는 이 페이지에만 있어서, 클래스가 아닌 아이디 사용-->
+    <!--form에서 중요한 attribute 2가지:action과 method-->
+    <form action="friends.html" method="get" id="login-form">
+        <input name="username" type="text" placeholder="Email or phone number"></input>
+        <input name="password" type="password" placeholder="Password"></input>
+        <input type="submit" value="Log In"></input>
+        <input type="submit" value="Sign Up"></input>
+        <a href="#">Find KaKao Account or Password</a>
+    </form>
+    
+</body>
+</html>
