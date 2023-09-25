@@ -5,13 +5,20 @@
 @import "reset.css";
 @import "variables.css";
 /*Components*/
+@import "components/badge.css";
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
 @import "components/user-component.css";
+@import "components/dot-notification.css";
+
 /*Screens*/
 @import "screens/login.css";
 @import "screens/friends.css";
+@import "screens/chats.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
 
 
 /*main css 파일인 'styles.css'에는 모든 파일에 동일하게 적용되어야 하는 스타일, 예를 들어 font family나 background-color과 같은 스타일을 써넣는다.'*/
@@ -23,3 +30,6 @@ body {
 /*status-bar자리------>status-bar.css에 다 모아두기!~!
 따로 모아두는 이유:status-bar은 이 페이지 뿐만 아니라 다른 모든 페이지에도 있을 거기 때문에!*/
 
+.main-screen {
+    padding:0px var(--horizontal-space);
+}

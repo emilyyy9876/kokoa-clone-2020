@@ -1,0 +1,149 @@
+<!--대부분의 web server가 디폴트로 index.html을 찾아보도록 설정되어 있음-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find - KoKoa Clone</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+   
+</head>
+<body>
+    <!--하나 밖에 없어도 일단 class로 쓰는게 좋다...어떤게 id고 class인지 기억 못하므로 표현:BEM(Block Element Modifier)-->
+    <div class="status-bar">
+        <!--관행...status-bar에 있는 column 표현:BEM(Block Element Modifier)-->
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>44%</span>
+            <i class="fa-solid fa-battery-half"></i>
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </div>
+    <header class="screen-header">
+        <h1 class="screen-header__title">Find</h1>
+        <div class="screen-header__icons">
+            <span><i class="fa-solid fa-magnifying-glass fa-xl"></i></span>
+            <span>
+                <a class="nav__link" href="settings.html">
+                    <i class="fa-solid fa-gear fa-xl"></i>
+                </a>
+                <div class="dot-notification"></div>
+            </span>
+        </div>
+    </header>
+    <main class="main-screen">
+        <div class="find-screen__columns">
+            <div class="find-screen__way-to-find">
+               <!--아이콘의 크기를 font=size 속성을 이용해 조절할 수 있음-->
+                <span><i class="fa-solid fa-qrcode fa-2xl"></i></span>
+                <span>QR Code</span>
+            </div>
+            <div class="find-screen__way-to-find">
+                <span><i class="fa-regular fa-address-book fa-2xl"></i></span>
+                <span>Add by Contacts</span>
+            </div>
+            <div class="find-screen__way-to-find">
+                <span><i class="fa-solid fa-fingerprint fa-2xl"></i></span>
+                <span>Add by ID</span>
+            </div>
+            <div class="find-screen__way-to-find">
+                <span><i class="fa-regular fa-envelope fa-2xl"></i></span>
+                <span>Invite</span>
+            </div>
+        </div>
+        <div class="find-screen__recommended-friends">
+            <h6 class="find-screen__recommended-friends-header">Recommended Friends</h6>
+            <span class="find-screen__recommended-friends-content">You have no recommended friends.</span>
+        </div>
+        <div class="find-screen__open-chat find-screen__recommended-friends">
+            <div class="find-screen__open-chat-header">
+                <h4>Open Chat</h4><!--본인은 span으로 작성함-->
+                <!--
+                <div>
+                    <div>Go to Openchat Home</div>
+                    <span><i class="fa-solid fa-chevron-right fa-xs"></i></span>
+                </div>
+                -->
+                <span>Go to Openchat Home<i class="fa-solid fa-chevron-right fa-xs"></i></span>
+            </div>
+            <ul class="find-screen__open-chat-content">
+                <li class="find-screen__open-chat-list">
+                        <div class="find-screen__open-chat-list-column find-screen__open-chat-list-text">
+                            <h5>#BTS</h5>
+                            <h6>#BTS#ARMY#FRIENDS</h6>
+                            <div class="find-screen__open-chat-room-info">
+                                <img src="https://avatars.githubusercontent.com/u/106860186?v=4" class="user-component__avatar user-component__avatar__xxs"/>
+                                <span>802 members</span>
+                                <span>|</span>
+                                <span class="find-screen__open-chat-room-activity">Active</span>
+                            </div>
+                        </div>
+                        <div class="find-screen__open-chat-list-column">
+                            <img src="https://kr.ktown4u.com/goods_files/SH0164/goods_images/000054/GD00053992.default.1.png" class="find-screen__open-chat-room-image"/>
+                            <div class="find-screen__open-chat-room-likes">
+                                <i class="fa-solid fa-heart"></i>
+                                <span>326</span>
+                            </div>
+                        </div>
+                </li>
+                <li class="find-screen__open-chat-list">
+                        <div class="find-screen__open-chat-list-column find-screen__open-chat-list-text">
+                            <h5>#BTS</h5>
+                            <h6>#BTS#ARMY#FRIENDS</h6>
+                            <div class="find-screen__open-chat-room-info">
+                                <img src="https://avatars.githubusercontent.com/u/106860186?v=4" class="user-component__avatar user-component__avatar__xxs"/>
+                                <span>802 members</span>
+                                <span>|</span>
+                                <span class="find-screen__open-chat-room-activity">Active</span>
+                            </div>
+                        </div>
+                        <div class="find-screen__open-chat-list-column">
+                            <img src="https://kr.ktown4u.com/goods_files/SH0164/goods_images/000054/GD00053992.default.1.png" class="find-screen__open-chat-room-image"/>
+                            <div class="find-screen__open-chat-room-likes">
+                                <i class="fa-solid fa-heart"></i>
+                                <span>326</span>
+                            </div>
+                        </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <div>
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li">
+                    <a class="nav__link" href="friends.html">
+                    <i class="fa-solid fa-user fa-2xl"></i>
+                    </a>
+                </li>
+                <li class="nav__li">
+                    <a class="nav__link" href="chats.html">
+                        <span class="nav__notification badge">1</span>
+                        <i class="fa-regular fa-comment fa-2xl"></i>
+                    </a>
+                </li>
+                <li class="nav__li">
+                    <a class="nav__link" href="find.html">
+                        <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                    </a>
+                </li>
+                <li class="nav__li">
+                    <a class="nav__link" href="more.html">
+                        <span class="nav__dot-notification dot-notification"></span>
+                        <i class="fa-solid fa-ellipsis fa-2xl"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script src="https://kit.fontawesome.com/be354233e0.js" crossorigin="anonymous"></script>
+</body>
+</html>

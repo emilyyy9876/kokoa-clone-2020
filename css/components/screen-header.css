@@ -12,3 +12,13 @@
 .screen-header__icons span {
     padding-left:20px;
 }
+
+.screen-header__icons span {
+    position: relative;
+}
+.screen-header__icons span .dot-notification {
+    position:absolute;
+    right:-10px;
+    top:-10px;
+}
+

@@ -1,0 +1,14 @@
+.badge {
+    background-color:tomato;
+    /*
+    display:block; ------>필요없어짐.왜냐하면 아래에서 display:flex를 작성했는데 이것은 display:block의 효과도 가지고 있다.
+    */
+    width:25px;
+    height:25px;
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight:600;
+}

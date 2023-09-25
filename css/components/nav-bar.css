@@ -19,23 +19,11 @@
     /*
     display:block; ------>필요없어짐.왜냐하면 아래에서 display:flex를 작성했는데 이것은 display:block의 효과도 가지고 있다.
     */
-    width:30px;
-    height:30px;
-    border-radius: 15px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    color:white;
-    font-weight:600;
     position:absolute;
     right:-15px;
     top:-15px;
 }
 .nav__dot-notification {
-    width:7px;
-    height:7px;
-    border-radius:50%;
-    background-color:tomato;
     position:absolute;
     right:-10px;
     top:-10px;

@@ -1,0 +1,95 @@
+/*nico->.find-icons로 설정함*/
+.find-screen__columns {
+    display:flex;
+    justify-content: space-between;
+    margin:20px 0;
+}
+/*nico->.find-icons__icon로 설정함*/
+.find-screen__way-to-find {
+    width:73px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.find-screen__way-to-find span:nth-child(2) {
+    text-align: center;/*nico->없음*/
+    margin-top: 20px;/*궁금한점...inline요소인에 margin 적용되는 이유?*/
+}
+
+.find-screen__recommended-friends {
+    border-top: var(--main-border);
+    padding-top:15px;
+    color:rgba(0,0,0,0.5);
+}
+.find-screen__recommended-friends-header {
+    display:flex;
+    justify-content: space-between;
+    
+}
+.find-screen__recommended-friends-content {
+    /*
+    display:flex;
+    justify-content: center;
+    */
+    text-align:center;
+    font-size:18px;
+    display: block;/*inline인 span에 margin 주기위해서*/
+    margin:110px 0;
+}
+.find-screen__open-chat-header {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.8;/*나는 안했음*/
+}
+.find-screen__open-chat-header span{
+    opacity: 0.6;/*나는 안했음*/
+}
+.find-screen__open-chat-list {
+    border-bottom: 0.5px solid rgba(0,0,0,0.2);
+    display:flex;
+    justify-content:space-between;
+    padding:15px 0;
+}
+.find-screen__open-chat-list-text  {
+    display:flex;
+    flex-direction: column;
+}
+.find-screen__open-chat-room-info {
+    padding:7px 0;
+    display:flex;
+    /*align-items: center;*/ /*있으면 오히려 세로축상에서 중앙정렬 안됨*/
+}
+.find-screen__open-chat-room-info > * {
+    margin-right:10px;
+}
+.find-screen__open-chat-list-column h5 {
+    color:black;
+    font-size: 18px;
+    font-weight: 600;
+    padding:10px 0;
+}
+
+.find-screen__open-chat-room-activity {
+    color:#FF63C3;
+}
+.find-screen__open-chat-room-image {
+    width:100px;
+    height:100px;
+    border-radius: 10%;
+}
+.find-screen__open-chat-list-column:nth-of-type(2) {
+    position:relative;
+}
+.find-screen__open-chat-room-likes {
+    background-color: rgba(0,0,0,0.6);
+    border-radius:20%;
+    color:white;
+    width: 60px;
+    height:20px;
+    padding:0 5px ;
+    position:absolute;
+    bottom:8px;
+    right:8px;
+}

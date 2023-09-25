@@ -1,0 +1,38 @@
+.margin-bottom {
+    margin-bottom: 25px;
+}
+
+.screen-header h1 {
+    font-size:23px;
+    font-weight: 700;
+}
+.settings__icon-lists li{
+    padding:20px 0;
+    display:flex;
+    justify-content: space-between;
+}
+
+.settings__icon-lists__column span {
+    font-size:20px;
+    padding-left: 25px;
+    font-weight: 400;
+}
+
+.setting__new-notification {
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: tomato;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.display__flex {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+

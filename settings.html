@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings- Kokoa Clone</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <div class="status-bar">
+        <!--관행...status-bar에 있는 column 표현:BEM(Block Element Modifier)-->
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>44%</span>
+            <i class="fa-solid fa-battery-half"></i>
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </div>
+        <div class="screen-header margin-bottom">
+            <span><i class="fa-solid fa-chevron-left fa-2xl"></i></span>
+            <h1>Settings</h1>
+            <span><i class="fa-solid fa-magnifying-glass fa-2xl"></i></span>
+        </div>
+        <div class="main-screen">
+            <ul class="settings__icon-lists">
+                <li>
+                    <div class="settings__icon-lists__column">
+                        <i class="fa-solid fa-volume-low fa-2xl"></i>
+                        <span>Notices</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="settings__icon-lists__column">
+                        <i class="fa-solid fa-flask fa-2xl"></i>
+                        <span>Kakao Lab</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="settings__icon-lists__column">
+                        <i class="fa-solid fa-info fa-2xl"></i>
+                        <span>Version</span>
+                    </div>
+                    <span>Latest Version</span>
+                </li>
+            </ul>
+            <ul class="settings__icon-lists">
+                <li>
+                    <div class="settings__icon-lists__column">
+                        <i class="fa-solid fa-lock fa-2xl"></i>
+                        <span>Privacy</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="settings__icon-lists__column">
+                        <i class="fa-regular fa-bell fa-2xl"></i>
+                        <span>Notifications</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="settings__icon-lists__column">
+                        <i class="fa-regular fa-user fa-2xl"></i>
+                        <span>Friends</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="settings__icon-lists__column">
+                        <i class="fa-regular fa-comment fa-2xl"></i>
+                        <span>Chats</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="settings__icon-lists__column display__flex">
+                        <i class="fa-solid fa-display fa-2xl"></i>
+                        <span>Display</span>
+                        <div class="setting__new-notification">N</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="settings__icon-lists__column display__flex">
+                        <span><i class="fa-solid fa-brush fa-2xl"></i></span>
+                        <span>Themes</span>
+                        <div class="setting__new-notification">N</div>
+                    </div>
+                    <span>Default theme</span>
+                </li>
+                <li>
+                    <div class="settings__icon-lists__column">
+                        <i class="fa-solid fa-phone fa-2xl"></i>
+                        <span>Call</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <nav class="nav">
+                <ul class="nav__ul">
+                    <li class="nav__li">
+                        <a class="nav__link" href="friends.html">
+                            <i class="fa-regular fa-user fa-2xl"></i>
+                        </a>
+                    </li>
+                    <li class="nav__li">
+                        <a class="nav__link" href="chats.html">
+                            <span class="nav__notification badge">1</span>
+                            <i class="fa-solid fa-comment fa-2xl"></i>
+                        </a>
+                    </li>
+                    <li class="nav__li">
+                        <a class="nav__link" href="find.html">
+                            <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                        </a>
+                    </li>
+                    <li class="nav__li">
+                        <a class="nav__link" href="more.html">
+                            <span class="nav__dot-notification dot-notification"></span>
+                            <i class="fa-solid fa-ellipsis fa-2xl"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+    <script src="https://kit.fontawesome.com/be354233e0.js" crossorigin="anonymous"></script>
+</body>
+</html>

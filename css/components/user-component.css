@@ -14,7 +14,6 @@
     align-items: center;
 }
 
-
 .user-component {
     justify-content: space-between;
 }
@@ -31,12 +30,17 @@
     font-size:18px;
 }
 .user-component__title--not-bold {
-    font-weight: 400;
+    font-weight: 500;
 }
 .user-component__subtitle {
     margin-top:8px;
     font-size:17px;
     color:rgba(0,0,0,0.5);
+}
+
+.user-component__time {
+    margin-bottom:10px;
+    display:block;
 }
 
 .user-component__avatar__xl {
@@ -47,11 +51,15 @@
     width:60px;
     height:60px;
 }
+.user-component__avatar__xxs {
+    width:20px;
+    height:20px;
+}
 
 .user-component__column:nth-child(2) {
-    justify-content:flex-end;
     color:rgba(0,0,0,0.5);
-}
-.user-component__column:nth-child(2) span{
-    padding-right:3px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items: end;
 }

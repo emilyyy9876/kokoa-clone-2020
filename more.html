@@ -1,0 +1,133 @@
+<!--대부분의 web server가 디폴트로 index.html을 찾아보도록 설정되어 있음-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More - KoKoa Clone</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+   
+</head>
+<body>
+    <!--하나 밖에 없어도 일단 class로 쓰는게 좋다...어떤게 id고 class인지 기억 못하므로 표현:BEM(Block Element Modifier)-->
+    <div class="status-bar">
+        <!--관행...status-bar에 있는 column 표현:BEM(Block Element Modifier)-->
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>44%</span>
+            <i class="fa-solid fa-battery-half"></i>
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </div>
+    <header class="screen-header">
+        <h1 class="screen-header__title">More</h1>
+        <div class="screen-header__icons">
+            <span><i class="fa-solid fa-magnifying-glass fa-xl"></i></span>
+            <span><i class="fa-solid fa-music fa-xl"></i></span>
+            <span>
+                <a class="nav__link" href="settings.html">
+                    <i class="fa-solid fa-gear fa-xl"></i>
+                </a>
+                <div class="dot-notification"></div>
+            </span>
+        </div>
+    </header>
+    <main class="main-screen">
+        <div class="user-component">
+            <div class="user-component__column">
+                <img src="https://avatars.githubusercontent.com/u/106860186?v=4" class="user-component__avatar user-component__avatar__xl"/>
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Strongwoman KKY</h4>
+                    <h6 class="user-component__subtitle">
+                        +1 987-654-3210
+                    </h6>
+                </div>
+            </div>
+            <div class="user-component__column">
+                <i></i>
+            </div>
+        </div>
+        <div class="more__icons-grid">
+            <div class="more__icons-item">
+                <span class="icons-item__icon"><i class="fa-regular fa-calendar-check fa-2xl"></i></span>
+                <span class="icons-item__icon-name">Calender</span>
+            </div>
+            <div class="more__icons-item">
+                <span class="icons-item__icon"><i class="fa-solid fa-briefcase fa-2xl"></i></span>
+                <span class="icons-item__icon-name">Talk Drive</span>
+                <div class="dot-notification more__dot-notification-position"></div>
+            </div>
+            <div class="more__icons-item">
+                <span class="icons-item__icon"><i class="fa-regular fa-face-smile-wink fa-2xl"></i></span>
+                <span class="icons-item__icon-name">Emoticons</span>
+            </div>
+            <div class="more__icons-item">
+                <span class="icons-item__icon"><i class="fa-solid fa-brush fa-2xl"></i></span>
+                <span class="icons-item__icon-name">Themes</span>
+            </div>
+            <div class="more__icons-item">
+                <span class="icons-item__icon"><i class="fa-regular fa-circle-user fa-2xl"></i></span>
+                <span class="icons-item__icon-name">Account</span>
+            </div>
+            <div class="more__icons-item">
+                <span class="icons-item__icon"><i class="fa-solid fa-comments fa-2xl"></i></span>
+                <span class="icons-item__icon-name">Openchat</span>
+            </div>
+        </div>
+        <div class="more__suggestions">
+            <h6 class="more__suggestions-title">Suggestions</h6>
+            <div class="more__suggestions-icons-grid">
+                <div class="more__suggestions-icons-item">
+                    <img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/service/2abcd682018700001.png" class=""/>
+                    <span>KaKao Story</span>
+                </div>
+                <div class="more__suggestions-icons-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/ko/8/87/Kakaofriends.png" class=""/>
+                    <span>KaKao friends</span>
+                </div>
+                <div class="more__suggestions-icons-item">
+                    <img src="https://o.qoo-img.com/ggpht/5pXvs-h7F1v9fWN06BhlPjlJ7OQCbAr4H0i7kgA6FW0RHdA9-WRLh4c-4vygkyOZuQ" class=""/>
+                    <span>Friends Gem</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div>
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li">
+                    <a class="nav__link" href="friends.html">
+                        <i class="fa-regular fa-user fa-2xl"></i>
+                    </a>
+                </li>
+                <li class="nav__li">
+                    <a class="nav__link" href="chats.html">
+                        <span class="nav__notification badge">1</span>
+                        <i class="fa-solid fa-comment fa-2xl"></i>
+                    </a>
+                </li>
+                <li class="nav__li">
+                    <a class="nav__link" href="find.html">
+                        <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                    </a>
+                </li>
+                <li class="nav__li">
+                    <a class="nav__link" href="more.html">
+                        <span class="nav__dot-notification dot-notification"></span>
+                        <i class="fa-solid fa-ellipsis fa-2xl"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script src="https://kit.fontawesome.com/be354233e0.js" crossorigin="anonymous"></script>
+</body>
+</html>
